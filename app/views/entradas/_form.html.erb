@@ -1,0 +1,87 @@
+<%= form_with(model: entrada, local: true) do |form| %>
+  <% if entrada.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(entrada.errors.count, "error") %> prohibited this entrada from being saved:</h2>
+
+      <ul>
+        <% entrada.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :numero %>
+    <%= form.number_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cliente %>
+    <%= form.text_field :cliente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :destino %>
+    <%= form.text_field :destino %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_field :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cantidad %>
+    <%= form.text_field :cantidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :peso %>
+    <%= form.text_field :peso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :um %>
+    <%= form.text_field :um %>
+  </div>
+
+  <div class="field">
+    <%= form.label :volumen %>
+    <%= form.text_field :volumen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ubicacion %>
+    <%= form.text_field :ubicacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uembarque %>
+    <%= form.text_field :uembarque %>
+  </div>
+
+  <div class="field">
+    <%= form.label :proveedor %>
+    <%= form.text_field :proveedor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :docto %>
+    <%= form.text_field :docto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tdocto %>
+    <%= form.text_field :tdocto %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

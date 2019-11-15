@@ -1,0 +1,137 @@
+<%= form_with(model: edetalle, local: true) do |form| %>
+  <% if edetalle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(edetalle.errors.count, "error") %> prohibited this edetalle from being saved:</h2>
+
+      <ul>
+        <% edetalle.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :numero %>
+    <%= form.number_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cliente %>
+    <%= form.text_field :cliente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :linea %>
+    <%= form.number_field :linea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nosec %>
+    <%= form.text_field :nosec %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nobultos %>
+    <%= form.number_field :nobultos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :noparte %>
+    <%= form.text_field :noparte %>
+  </div>
+
+  <div class="field">
+    <%= form.label :upc %>
+    <%= form.text_field :upc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shortdesc %>
+    <%= form.text_field :shortdesc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longdesc %>
+    <%= form.text_area :longdesc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pesototal %>
+    <%= form.text_field :pesototal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :um %>
+    <%= form.text_field :um %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marca %>
+    <%= form.text_field :marca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :modelo %>
+    <%= form.text_field :modelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :serie %>
+    <%= form.text_field :serie %>
+  </div>
+
+  <div class="field">
+    <%= form.label :origen %>
+    <%= form.text_field :origen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cantidad %>
+    <%= form.text_field :cantidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :umc %>
+    <%= form.text_field :umc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.text_field :precio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :importe %>
+    <%= form.text_field :importe %>
+  </div>
+
+  <div class="field">
+    <%= form.label :docto %>
+    <%= form.text_field :docto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :capturoentrada %>
+    <%= form.number_field :capturoentrada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :capturofactura %>
+    <%= form.number_field :capturofactura %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reviso %>
+    <%= form.number_field :reviso %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

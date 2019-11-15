@@ -1,0 +1,47 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  nombre: MyString
+  rsocial: MyString
+  rfc: MyString
+  calleynumero: MyString
+  colonia: MyString
+  delegacion: MyString
+  ciudad: MyString
+  estado: MyString
+  codigopostal: MyString
+  telefono: MyString
+  correoe: MyString
+  contacto: MyString
+  puesto: MyString
+  telefonoc: MyString
+  correoec: MyString
+  agente: MyString
+  tipoactividad: MyString
+  clientedesde: 2019-10-28
+  ultimatransaccion: 2019-10-28
+  pais: MyString
+
+two:
+  codigo: MyString
+  nombre: MyString
+  rsocial: MyString
+  rfc: MyString
+  calleynumero: MyString
+  colonia: MyString
+  delegacion: MyString
+  ciudad: MyString
+  estado: MyString
+  codigopostal: MyString
+  telefono: MyString
+  correoe: MyString
+  contacto: MyString
+  puesto: MyString
+  telefonoc: MyString
+  correoec: MyString
+  agente: MyString
+  tipoactividad: MyString
+  clientedesde: 2019-10-28
+  ultimatransaccion: 2019-10-28
+  pais: MyString

@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Edetalles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numero</th>
+      <th>Fecha</th>
+      <th>Cliente</th>
+      <th>Linea</th>
+      <th>Nosec</th>
+      <th>Nobultos</th>
+      <th>Noparte</th>
+      <th>Upc</th>
+      <th>Shortdesc</th>
+      <th>Longdesc</th>
+      <th>Pesototal</th>
+      <th>Um</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Serie</th>
+      <th>Origen</th>
+      <th>Cantidad</th>
+      <th>Umc</th>
+      <th>Precio</th>
+      <th>Importe</th>
+      <th>Docto</th>
+      <th>Capturoentrada</th>
+      <th>Capturofactura</th>
+      <th>Reviso</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @edetalles.each do |edetalle| %>
+      <tr>
+        <td><%= edetalle.numero %></td>
+        <td><%= edetalle.fecha %></td>
+        <td><%= edetalle.cliente %></td>
+        <td><%= edetalle.linea %></td>
+        <td><%= edetalle.nosec %></td>
+        <td><%= edetalle.nobultos %></td>
+        <td><%= edetalle.noparte %></td>
+        <td><%= edetalle.upc %></td>
+        <td><%= edetalle.shortdesc %></td>
+        <td><%= edetalle.longdesc %></td>
+        <td><%= edetalle.pesototal %></td>
+        <td><%= edetalle.um %></td>
+        <td><%= edetalle.marca %></td>
+        <td><%= edetalle.modelo %></td>
+        <td><%= edetalle.serie %></td>
+        <td><%= edetalle.origen %></td>
+        <td><%= edetalle.cantidad %></td>
+        <td><%= edetalle.umc %></td>
+        <td><%= edetalle.precio %></td>
+        <td><%= edetalle.importe %></td>
+        <td><%= edetalle.docto %></td>
+        <td><%= edetalle.capturoentrada %></td>
+        <td><%= edetalle.capturofactura %></td>
+        <td><%= edetalle.reviso %></td>
+        <td><%= link_to 'Show', edetalle %></td>
+        <td><%= link_to 'Edit', edit_edetalle_path(edetalle) %></td>
+        <td><%= link_to 'Destroy', edetalle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Edetalle', new_edetalle_path %>

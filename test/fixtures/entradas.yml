@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: 1
+  fecha: 2019-10-28
+  cliente: MyString
+  destino: MyString
+  descripcion: MyString
+  cantidad: 1.5
+  peso: 1.5
+  um: MyString
+  volumen: MyString
+  ubicacion: MyString
+  uembarque: MyString
+  proveedor: MyString
+  docto: MyString
+  tdocto: MyString
+
+two:
+  numero: 1
+  fecha: 2019-10-28
+  cliente: MyString
+  destino: MyString
+  descripcion: MyString
+  cantidad: 1.5
+  peso: 1.5
+  um: MyString
+  volumen: MyString
+  ubicacion: MyString
+  uembarque: MyString
+  proveedor: MyString
+  docto: MyString
+  tdocto: MyString

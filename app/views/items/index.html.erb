@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Descripcion</th>
+      <th>Longdesc</th>
+      <th>Sku</th>
+      <th>Upc</th>
+      <th>Categoria</th>
+      <th>Subcategoria</th>
+      <th>Idmarca</th>
+      <th>Vendedor</th>
+      <th>Peso</th>
+      <th>Umedida</th>
+      <th>Volumen</th>
+      <th>Umedidav</th>
+      <th>Alto</th>
+      <th>Umedidaa</th>
+      <th>Ancho</th>
+      <th>Umedidaw</th>
+      <th>Largo</th>
+      <th>Umedidal</th>
+      <th>Costo</th>
+      <th>Paisorigen</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.codigo %></td>
+        <td><%= item.descripcion %></td>
+        <td><%= item.longdesc %></td>
+        <td><%= item.sku %></td>
+        <td><%= item.upc %></td>
+        <td><%= item.categoria %></td>
+        <td><%= item.subcategoria %></td>
+        <td><%= item.idmarca %></td>
+        <td><%= item.vendedor %></td>
+        <td><%= item.peso %></td>
+        <td><%= item.umedida %></td>
+        <td><%= item.volumen %></td>
+        <td><%= item.umedidav %></td>
+        <td><%= item.alto %></td>
+        <td><%= item.umedidaa %></td>
+        <td><%= item.ancho %></td>
+        <td><%= item.umedidaw %></td>
+        <td><%= item.largo %></td>
+        <td><%= item.umedidal %></td>
+        <td><%= item.costo %></td>
+        <td><%= item.paisorigen %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item', new_item_path %>

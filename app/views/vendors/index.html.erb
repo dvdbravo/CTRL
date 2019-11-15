@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vendors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Nombre</th>
+      <th>Calleynumero</th>
+      <th>Ciudad</th>
+      <th>Estado</th>
+      <th>Codigopostal</th>
+      <th>Telefono</th>
+      <th>Correoe</th>
+      <th>Contacto</th>
+      <th>Puesto</th>
+      <th>Telefonoc</th>
+      <th>Correoec</th>
+      <th>Ultimatransaccion</th>
+      <th>Taxid</th>
+      <th>Pais</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vendors.each do |vendor| %>
+      <tr>
+        <td><%= vendor.codigo %></td>
+        <td><%= vendor.nombre %></td>
+        <td><%= vendor.calleynumero %></td>
+        <td><%= vendor.ciudad %></td>
+        <td><%= vendor.estado %></td>
+        <td><%= vendor.codigopostal %></td>
+        <td><%= vendor.telefono %></td>
+        <td><%= vendor.correoe %></td>
+        <td><%= vendor.contacto %></td>
+        <td><%= vendor.puesto %></td>
+        <td><%= vendor.telefonoc %></td>
+        <td><%= vendor.correoec %></td>
+        <td><%= vendor.ultimatransaccion %></td>
+        <td><%= vendor.taxid %></td>
+        <td><%= vendor.pais %></td>
+        <td><%= link_to 'Show', vendor %></td>
+        <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
+        <td><%= link_to 'Destroy', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vendor', new_vendor_path %>

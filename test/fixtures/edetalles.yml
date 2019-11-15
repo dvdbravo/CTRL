@@ -1,0 +1,53 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: 1
+  fecha: 2019-10-28
+  cliente: MyString
+  linea: 1
+  nosec: MyString
+  nobultos: 1
+  noparte: MyString
+  upc: MyString
+  shortdesc: MyString
+  longdesc: MyText
+  pesototal: 1.5
+  um: MyString
+  marca: MyString
+  modelo: MyString
+  serie: MyString
+  origen: MyString
+  cantidad: 1.5
+  umc: MyString
+  precio: 9.99
+  importe: 9.99
+  docto: MyString
+  capturoentrada: 1
+  capturofactura: 1
+  reviso: 1
+
+two:
+  numero: 1
+  fecha: 2019-10-28
+  cliente: MyString
+  linea: 1
+  nosec: MyString
+  nobultos: 1
+  noparte: MyString
+  upc: MyString
+  shortdesc: MyString
+  longdesc: MyText
+  pesototal: 1.5
+  um: MyString
+  marca: MyString
+  modelo: MyString
+  serie: MyString
+  origen: MyString
+  cantidad: 1.5
+  umc: MyString
+  precio: 9.99
+  importe: 9.99
+  docto: MyString
+  capturoentrada: 1
+  capturofactura: 1
+  reviso: 1

@@ -1,0 +1,2 @@
+class Tactividad < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Umedida < ApplicationRecord
+end

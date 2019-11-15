@@ -1,0 +1,2 @@
+module TactividadsHelper
+end

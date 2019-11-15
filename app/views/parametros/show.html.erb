@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @parametro.nombre %>
+</p>
+
+<p>
+  <strong>Calleynumero:</strong>
+  <%= @parametro.calleynumero %>
+</p>
+
+<p>
+  <strong>Ciudadedocp:</strong>
+  <%= @parametro.ciudadedocp %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @parametro.telefono %>
+</p>
+
+<p>
+  <strong>Correoe:</strong>
+  <%= @parametro.correoe %>
+</p>
+
+<p>
+  <strong>Noentrada:</strong>
+  <%= @parametro.noentrada %>
+</p>
+
+<%= link_to 'Edit', edit_parametro_path(@parametro) %> |
+<%= link_to 'Back', parametros_path %>

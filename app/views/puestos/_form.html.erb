@@ -1,0 +1,27 @@
+<%= form_with(model: puesto, local: true) do |form| %>
+  <% if puesto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(puesto.errors.count, "error") %> prohibited this puesto from being saved:</h2>
+
+      <ul>
+        <% puesto.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :puesto %>
+    <%= form.text_field :puesto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_field :descripcion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

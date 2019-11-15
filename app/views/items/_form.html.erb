@@ -1,0 +1,122 @@
+<%= form_with(model: item, local: true) do |form| %>
+  <% if item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+        <% item.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :codigo %>
+    <%= form.text_field :codigo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_field :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longdesc %>
+    <%= form.text_area :longdesc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sku %>
+    <%= form.text_field :sku %>
+  </div>
+
+  <div class="field">
+    <%= form.label :upc %>
+    <%= form.text_field :upc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :categoria %>
+    <%= form.text_field :categoria %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subcategoria %>
+    <%= form.text_field :subcategoria %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idmarca %>
+    <%= form.text_field :idmarca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendedor %>
+    <%= form.text_field :vendedor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :peso %>
+    <%= form.text_field :peso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :umedida %>
+    <%= form.text_field :umedida %>
+  </div>
+
+  <div class="field">
+    <%= form.label :volumen %>
+    <%= form.text_field :volumen %>
+  </div>
+
+  <div class="field">
+    <%= form.label :umedidav %>
+    <%= form.text_field :umedidav %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alto %>
+    <%= form.text_field :alto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :umedidaa %>
+    <%= form.text_field :umedidaa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ancho %>
+    <%= form.text_field :ancho %>
+  </div>
+
+  <div class="field">
+    <%= form.label :umedidaw %>
+    <%= form.text_field :umedidaw %>
+  </div>
+
+  <div class="field">
+    <%= form.label :largo %>
+    <%= form.text_field :largo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :umedidal %>
+    <%= form.text_field :umedidal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :costo %>
+    <%= form.text_field :costo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :paisorigen %>
+    <%= form.text_field :paisorigen %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

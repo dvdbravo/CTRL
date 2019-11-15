@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @tactividad.codigo %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @tactividad.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_tactividad_path(@tactividad) %> |
+<%= link_to 'Back', tactividads_path %>

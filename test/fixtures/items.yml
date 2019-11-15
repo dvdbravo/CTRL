@@ -1,0 +1,47 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  descripcion: MyString
+  longdesc: MyText
+  sku: MyString
+  upc: MyString
+  categoria: MyString
+  subcategoria: MyString
+  idmarca: MyString
+  vendedor: MyString
+  peso: 1.5
+  umedida: MyString
+  volumen: 1.5
+  umedidav: MyString
+  alto: 1.5
+  umedidaa: MyString
+  ancho: 1.5
+  umedidaw: MyString
+  largo: 1.5
+  umedidal: MyString
+  costo: 9.99
+  paisorigen: MyString
+
+two:
+  codigo: MyString
+  descripcion: MyString
+  longdesc: MyText
+  sku: MyString
+  upc: MyString
+  categoria: MyString
+  subcategoria: MyString
+  idmarca: MyString
+  vendedor: MyString
+  peso: 1.5
+  umedida: MyString
+  volumen: 1.5
+  umedidav: MyString
+  alto: 1.5
+  umedidaa: MyString
+  ancho: 1.5
+  umedidaw: MyString
+  largo: 1.5
+  umedidal: MyString
+  costo: 9.99
+  paisorigen: MyString

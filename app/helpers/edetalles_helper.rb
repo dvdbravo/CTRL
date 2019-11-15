@@ -1,0 +1,2 @@
+module EdetallesHelper
+end

@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Entradas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numero</th>
+      <th>Fecha</th>
+      <th>Cliente</th>
+      <th>Destino</th>
+      <th>Descripcion</th>
+      <th>Cantidad</th>
+      <th>Peso</th>
+      <th>Um</th>
+      <th>Volumen</th>
+      <th>Ubicacion</th>
+      <th>Uembarque</th>
+      <th>Proveedor</th>
+      <th>Docto</th>
+      <th>Tdocto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entradas.each do |entrada| %>
+      <tr>
+        <td><%= entrada.numero %></td>
+        <td><%= entrada.fecha %></td>
+        <td><%= entrada.cliente %></td>
+        <td><%= entrada.destino %></td>
+        <td><%= entrada.descripcion %></td>
+        <td><%= entrada.cantidad %></td>
+        <td><%= entrada.peso %></td>
+        <td><%= entrada.um %></td>
+        <td><%= entrada.volumen %></td>
+        <td><%= entrada.ubicacion %></td>
+        <td><%= entrada.uembarque %></td>
+        <td><%= entrada.proveedor %></td>
+        <td><%= entrada.docto %></td>
+        <td><%= entrada.tdocto %></td>
+        <td><%= link_to 'Show', entrada %></td>
+        <td><%= link_to 'Edit', edit_entrada_path(entrada) %></td>
+        <td><%= link_to 'Destroy', entrada, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entrada', new_entrada_path %>

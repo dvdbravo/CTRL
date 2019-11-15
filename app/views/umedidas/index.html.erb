@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Umedidas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Descripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @umedidas.each do |umedida| %>
+      <tr>
+        <td><%= umedida.codigo %></td>
+        <td><%= umedida.descripcion %></td>
+        <td><%= link_to 'Show', umedida %></td>
+        <td><%= link_to 'Edit', edit_umedida_path(umedida) %></td>
+        <td><%= link_to 'Destroy', umedida, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Umedida', new_umedida_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tactividads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Descripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tactividads.each do |tactividad| %>
+      <tr>
+        <td><%= tactividad.codigo %></td>
+        <td><%= tactividad.descripcion %></td>
+        <td><%= link_to 'Show', tactividad %></td>
+        <td><%= link_to 'Edit', edit_tactividad_path(tactividad) %></td>
+        <td><%= link_to 'Destroy', tactividad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tactividad', new_tactividad_path %>
